@@ -1,0 +1,14 @@
+type Query {
+    getCarById(id: ID): Car
+    getAllCar(limit: Int): [Car]
+}
+
+type Car {
+    id: ID
+    carId: String
+    color: String
+    vendor: String
+    model: String
+    modelYear: Int
+    price: String
+}
